@@ -54,7 +54,7 @@ This route has a very simplistic model
 ```
 Simply put, it returns a JSON response with the persons property which is an array of persons within the database. It is also a GET request.
 
-- http://localhost:4000/api/`id` -> This endpoint results in a json response like so:
+- http://localhost:4000/api/id -> This endpoint results in a json response like so:
 
 ```
   {
@@ -66,7 +66,7 @@ Simply put, it returns a JSON response with the persons property which is an arr
 ```
 This endpoint only gets one data which matches the id which exists within the endpoint. It is a GET request
 
-- http://localhost:4000/api?name=`name` -> This endpoint is a GET request which returns a person with the given name from the database as long as it exists. If it does not exist, it returns an error.
+- http://localhost:4000/api?name=name -> This endpoint is a GET request which returns a person with the given name from the database as long as it exists. If it does not exist, it returns an error.
 
 ###### POST REQUESTS
 
@@ -81,12 +81,12 @@ This endpoint only gets one data which matches the id which exists within the en
 
 ```
 
-- http://localhost:4000/api?name=`name` -> This endpoint is a POST request which requires a query called name. This name query can be used to create a new person with the said name. The name has to be unique, that is, it should be a name that does not already exist.
+- http://localhost:4000/api?name=name -> This endpoint is a POST request which requires a query called name. This name query can be used to create a new person with the said name. The name has to be unique, that is, it should be a name that does not already exist.
 
 
 ###### PUT REQUESTS
 
-- http://localhost:4000/api/`id` -> This endpoint is a PUT request which updates the person with the given id from the database as long as it exists. The request body is required in this case. Like so:
+- http://localhost:4000/api/id -> This endpoint is a PUT request which updates the person with the given id from the database as long as it exists. The request body is required in this case. Like so:
 
 ```
   {
@@ -95,7 +95,7 @@ This endpoint only gets one data which matches the id which exists within the en
   }
 ```
 
-- http://localhost:4000/api?name=`name` -> This endpoint is a PUT request which updates the person with the given name from the database as long as it exists. The request body is required in this case. Like so:
+- http://localhost:4000/api?name=name -> This endpoint is a PUT request which updates the person with the given name from the database as long as it exists. The request body is required in this case. Like so:
 
 ```
 
@@ -109,9 +109,9 @@ This endpoint only gets one data which matches the id which exists within the en
 
 ###### DELETE REQUESTS
 
-- http://localhost:4000/api/`id` -> This endpoint is a DELETE request which deletes the person with the given id from the database as long as it exists. If it does not exist, it returns an error
+- http://localhost:4000/api/id -> This endpoint is a DELETE request which deletes the person with the given id from the database as long as it exists. If it does not exist, it returns an error
 
-- http://localhost:4000/api?name=`name` -> This endpoint is a DELETE request which deletes the person with the given name from the database as long as it exists. If it does not exist, it returns an error.
+- http://localhost:4000/api?name=name -> This endpoint is a DELETE request which deletes the person with the given name from the database as long as it exists. If it does not exist, it returns an error.
 
 
 
