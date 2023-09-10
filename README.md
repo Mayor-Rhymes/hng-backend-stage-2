@@ -30,7 +30,7 @@ The project uses [mongodb](https://mongodb.com) which is a no-sql database and i
 
 ##### How to use the API
 
-The api is quite straightforward. It is made up of just one route, which is the `api/person` endpoint.
+The api is quite straightforward. It is made up of just one route, which is the `api/` endpoint.
 
 This route has a very simplistic model
 
