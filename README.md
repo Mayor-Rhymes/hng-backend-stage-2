@@ -6,7 +6,7 @@
 
 Clone the repository using the following command
 
-`git clone `
+`git clone https://github.com/Mayor-Rhymes/hng-backend-stage-2.git`
 
 
 After cloning the repository, make sure you have node js and npm installed on your PC.
