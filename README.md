@@ -43,7 +43,7 @@ This route has a very simplistic model
 
 - http://localhost:4000/api -> This endpoint results in a json response like so:
 
-```
+```json
    {
     "persons": [
         {
@@ -58,7 +58,7 @@ Simply put, it returns a JSON response with the persons property which is an arr
 
 - http://localhost:4000/api/id -> This endpoint results in a json response like so:
 
-```
+```json
   {
     "_id": "64fe024f39a38b4f4c23a375",
     "name": "Wale Alao",
@@ -74,7 +74,7 @@ This endpoint only gets one data which matches the id which exists within the en
 
 - http://localhost:4000/api -> This endpoint is a POST request which requires a request body in JSON format. No other format is supported but JSON. The request body permitted is just the name of the person. The format looks like this:
 
-```  
+```json 
   {
 
     "name": "Michael Rega"
@@ -90,20 +90,19 @@ This endpoint only gets one data which matches the id which exists within the en
 
 - http://localhost:4000/api/id -> This endpoint is a PUT request which updates the person with the given id from the database as long as it exists. The request body is required in this case. Like so:
 
-```
+```json
   {
-     name: "Wale Fudion"
+     "name": "Wale Fudion"
 
   }
 ```
 
 - http://localhost:4000/api?name=name -> This endpoint is a PUT request which updates the person with the given name from the database as long as it exists. The request body is required in this case. Like so:
 
-```
-
+```json
   {
 
-    newName: "New name"
+    "newName": "New name"
 
   }
 
@@ -121,7 +120,7 @@ The model which exists in the database can be represented like so:
 
 ###### In Javascript?
 
-```
+```js
   interface Person {
 
       id: string;
@@ -133,8 +132,7 @@ The model which exists in the database can be represented like so:
 
 ###### In C#?
 
-``` 
-
+```c#
    class Person {
 
        public string id {get;}
@@ -153,7 +151,7 @@ The model which exists in the database can be represented like so:
 
 ###### In Mongoose js style?
 
-```
+```js
  const personSchema = new Schema(
   {
     name: {
