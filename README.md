@@ -166,5 +166,6 @@ The model which exists in the database can be represented like so:
 ```
 
 
+##### UML DIAGRAM FOR PROJECT
 
-
+The UML diagram can be found [here](https://github.com/Mayor-Rhymes/hng-backend-stage-2/blob/main/UML-IMAGES/UML_FOR_SCHEMA.png)
