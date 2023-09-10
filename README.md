@@ -2,6 +2,13 @@
 
 #### This project has been created in fulfillment of the task requirements for stage two backend.
 
+##### TECHNOLOGIES USED?
+
+The project uses [mongodb](https://mongodb.com) which is a no-sql database and it uses [mongoosejs](https://mongoosejs.com) which is an ODM (Object Data Modelling) library for [mongodb](https://mongodb.com). As a result, you need to have mongodb installed on your computer regardless of operating system. Additionally, this project uses [hono.dev](https://hono.dev) which is a fast web framework for node js.
+
+If you don't have mongodb installed on your computer, you can click the link below for installation instructions
+[How To Download mongodb on all platforms](https://tutorial.techaltum.com/mongodb-installation.html)
+
 ##### How to set up?
 
 Clone the repository using the following command
@@ -21,12 +28,7 @@ After installation is complete, type the following command
 
 `npm run dev`
 
-The command above will run the server immediately.
-
-##### TECHNOLOGIES USED?
-
-The project uses [mongodb](https://mongodb.com) which is a no-sql database and it uses [mongoosejs](https://mongoosejs.com) which is an ODM (Object Data Modelling) library for [mongodb](https://mongodb.com). As a result, you need to have mongodb installed on your computer regardless of operating system. Additionally, this project uses [hono.dev](https://hono.dev) which is a fast web framework for node js. 
-
+The command above will run the server immediately. 
 
 ##### How to use the API
 
