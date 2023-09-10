@@ -6,6 +6,7 @@ const personSchema = new Schema(
       type: String,
       required: true,
       unique: true,
+      minlength: [4, "Please enter at least 4 characters"],
     }
   },
  

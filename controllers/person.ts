@@ -1,6 +1,10 @@
 import { Context } from "hono";
 import Person from "../models/person";
 
+interface IPerson {
+  name: string;
+}
+
 //GET REQUEST
 //ALSO USES A name PARAMETER FOR FILTERING
 const get = async (c: Context) => {
@@ -43,7 +47,20 @@ const addPerson = async (c: Context) => {
   const name = c.req.query("name");
 
   if (!name) {
-    const { name } = await c.req.json();
+    const { name } = (await c.req.json()) as IPerson;
+    
+    if (name.length < 4) return c.json({message: "Please make sure name is at least 4 characters long"}, 417);
+
+    if (Number.isInteger(name)) return c.json({message: "Please enter a string and not an integer"}, 417);
+
+    const personExists = await Person.findOne({ name: name });
+
+    if (personExists)
+      return c.json(
+        { message: `Person with name ${name} already exists` },
+        409
+      );
+
     const person = await Person.create({ name });
 
     if (!person) return c.json({ message: "Unable to create person" }, 409);
