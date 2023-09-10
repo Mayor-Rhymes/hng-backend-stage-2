@@ -11,7 +11,7 @@ Clone the repository using the following command
 
 After cloning the repository, make sure you have node js and npm installed on your PC.
 
-If you have nodejs and npm installed on your PC, type the following command
+If you have nodejs and npm installed on your PC, type the following command in the project directory
 
 `npm install`
 
