@@ -33,6 +33,8 @@ The command above will run the server immediately.
 
 The api is quite straightforward. It is made up of just one route, which is the `api/` endpoint.
 
+###### `It is advisable to use postman for testing.`
+
 This route has a very simplistic model
 
 ##### The following endpoints and combinations are available:

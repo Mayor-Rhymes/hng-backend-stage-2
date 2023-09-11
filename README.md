@@ -31,7 +31,9 @@ The command above will run the server immediately.
 
 ##### How to use the API
 
-The api is quite straightforward. It is made up of just one route, which is the `api/` endpoint.
+The api is quite straightforward. It is made up of just one route, which is the `/api` endpoint.
+
+###### `It is advisable to use postman for testing.`
 
 This route has a very simplistic model
 
