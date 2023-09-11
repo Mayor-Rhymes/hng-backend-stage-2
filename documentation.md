@@ -203,4 +203,5 @@ const personSchema = new Schema({
 
 ##### UML DIAGRAM FOR PROJECT
 
-The UML diagram can be found [here](https://github.com/Mayor-Rhymes/hng-backend-stage-2/blob/main/UML-IMAGES/UML_FOR_SCHEMA.png)
+The UML diagram 1 can be found [here](https://github.com/Mayor-Rhymes/hng-backend-stage-2/blob/main/UML-IMAGES/UML_FOR_SCHEMA.png)
+The UML diagram  2 can be found  [here](https://github.com/Mayor-Rhymes/hng-backend-stage-2/blob/main/UML-IMAGES/API_UML.png)
