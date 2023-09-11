@@ -1,5 +1,7 @@
 ## HNG BACKEND STAGE TWO TASK
 
+Url: https://hng-1-bankend.onrender.com/api
+
 #### This project has been created in fulfillment of the task requirements for stage two backend.
 
 ##### TECHNOLOGIES USED?
@@ -37,7 +39,6 @@ The api is quite straightforward. It is made up of just one route, which is the 
 
 This route has a very simplistic model
 
-
 N.B -> Please make sure that you do not have a trailing slash after the url. 
 For example, `example.com/api/` is wrong.
 The correct url should be `example.com/api`
@@ -49,7 +50,7 @@ This is because of a rare trailing slash issue with [hono.dev](https://hono.dev)
 
 ###### GET REQUESTS
 
-- http://localhost:4000/api -> This endpoint results in a json response like so:
+- https://hng-1-bankend.onrender.com/api -> This endpoint results in a json response like so:
 
 ```json
 {
@@ -73,7 +74,7 @@ If the JSON response is valid and there is indeed a database which is empty, the
 }
 ```
 
-- http://localhost:4000/api/id -> This endpoint results in a json response like so:
+- https://hng-1-bankend.onrender.com/api/id -> This endpoint results in a json response like so:
 
 ```json
 {
@@ -85,7 +86,7 @@ If the JSON response is valid and there is indeed a database which is empty, the
 
 This endpoint only gets one data which matches the id which exists within the endpoint. It is a GET request
 
-- http://localhost:4000/api?name=name -> This endpoint is a GET request which returns a person with the given name from the database as long as it exists. If it does not exist, it returns an error.
+- https://hng-1-bankend.onrender.com/api?name=name -> This endpoint is a GET request which returns a person with the given name from the database as long as it exists. If it does not exist, it returns an error.
 
 `successful filter`
 
@@ -107,7 +108,7 @@ This endpoint only gets one data which matches the id which exists within the en
 
 ###### POST REQUESTS
 
-- http://localhost:4000/api -> This endpoint is a POST request which requires a request body in JSON format. No other format is supported but JSON. The request body permitted is just the name of the person. The format looks like this:
+- https://hng-1-bankend.onrender.com/api -> This endpoint is a POST request which requires a request body in JSON format. No other format is supported but JSON. The request body permitted is just the name of the person. The format looks like this:
 
 ```json
 {
@@ -115,11 +116,11 @@ This endpoint only gets one data which matches the id which exists within the en
 }
 ```
 
-- http://localhost:4000/api?name=name -> This endpoint is a POST request which requires a query called name. This name query can be used to create a new person with the said name. The name has to be unique, that is, it should be a name that does not already exist.
+- https://hng-1-bankend.onrender.com/api?name=name -> This endpoint is a POST request which requires a query called name. This name query can be used to create a new person with the said name. The name has to be unique, that is, it should be a name that does not already exist.
 
 ###### PUT REQUESTS
 
-- http://localhost:4000/api/id -> This endpoint is a PUT request which updates the person with the given id from the database as long as it exists. The request body is required in this case. Like so:
+- https://hng-1-bankend.onrender.com/api/id -> This endpoint is a PUT request which updates the person with the given id from the database as long as it exists. The request body is required in this case. Like so:
 
 ```json
 {
@@ -127,21 +128,21 @@ This endpoint only gets one data which matches the id which exists within the en
 }
 ```
 
-- http://localhost:4000/api?name=name -> This endpoint is a PUT request which updates the person with the given name from the database as long as it exists. The request body is required in this case. Like so:
+- https://hng-1-bankend.onrender.com/api?name=name -> This endpoint is a PUT request which updates the person with the given name from the database as long as it exists. The request body is required in this case. Like so:
 
 ```json
 {
   "newName": "New name"
 }
 ```
-Notice that instead of name, the request body contains `newName`. This is because the request query parameter already uses name and in order to prevent name collisions, the request body property had to be changed to `newName`.
 
+Notice that instead of name, the request body contains `newName`. This is because the request query parameter already uses name and in order to prevent name collisions, the request body property had to be changed to `newName`.
 
 ###### DELETE REQUESTS
 
-- http://localhost:4000/api/id -> This endpoint is a DELETE request which deletes the person with the given id from the database as long as it exists. If it does not exist, it returns an error
+- https://hng-1-bankend.onrender.com/api/id -> This endpoint is a DELETE request which deletes the person with the given id from the database as long as it exists. If it does not exist, it returns an error
 
-- http://localhost:4000/api?name=name -> This endpoint is a DELETE request which deletes the person with the given name from the database as long as it exists. If it does not exist, it returns an error.
+- https://hng-1-bankend.onrender.com/api?name=name -> This endpoint is a DELETE request which deletes the person with the given name from the database as long as it exists. If it does not exist, it returns an error.
 
 `delete success example`
 
