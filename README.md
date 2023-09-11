@@ -127,6 +127,8 @@ This endpoint only gets one data which matches the id which exists within the en
 }
 ```
 
+Notice that instead of name, the request body contains `newName`. This is because the request query parameter already uses name and in order to prevent name collisions, the request body property had to be changed to `newName`.
+
 ###### DELETE REQUESTS
 
 - http://localhost:4000/api/id -> This endpoint is a DELETE request which deletes the person with the given id from the database as long as it exists. If it does not exist, it returns an error

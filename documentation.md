@@ -126,6 +126,8 @@ This endpoint only gets one data which matches the id which exists within the en
   "newName": "New name"
 }
 ```
+Notice that instead of name, the request body contains `newName`. This is because the request query parameter already uses name and in order to prevent name collisions, the request body property had to be changed to `newName`.
+
 
 ###### DELETE REQUESTS
 
